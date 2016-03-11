@@ -1,12 +1,132 @@
 // ------------------- Variabler ------------------- //
-
+  $light_grey: #3f4453;
+  $dark_grey:    #3e3f44;
 
 // ------------------- Globale ------------------- //
   html{
-    
-    body{
-      font-family: "Arimo", sans-serif;
+  }
+
+  body{
+    font-family: "Arimo", sans-serif;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+      content: "";
+      display: table;
+  }
+  .clearfix:after {
+      clear: both;
+  }
+
+// ------------------- owlCarousel ------------------- //
+  #owl-gard .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+// ------------------- Header ------------------- //
+
+
+  header{
+    padding: 1rem 0 0 0;
+    height: auto;
+  }
+  .logo_wrapper{
+    float: left;
+    display: inline-block;
+    padding-bottom: 2rem;
+    img{
+      float:left;
+    }
+    #logo{
+      float:left;
+      color: $light_grey;
+      font-size: 1.35rem;
+      margin: 2rem 0 0 0;
+      font-weight: 400;
+
+      span{
+        font-weight: 700;
+      }
+    }
+  }
+  nav{
+    float: right;
+    margin-top: 2rem;
+    a{
+      color: $light_grey;
+      font-weight: 400;
+      text-decoration: none;
+      margin-left: 2rem;
+      &:active{
+        font-weight: 700;
+      }
+      &:hover{
+
+      }
     }
   }
 
-// ------------------- Variabler ------------------- //
+// ------------------- Banner ------------------- //
+  #banner{
+    background-image: url(../img/banner_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content{
+      .title{
+        font-family: "lobster two", cursive;
+        font-size: 5rem;
+        color: #666;
+
+      }
+    }
+  }
+
+// ------------------- Om Gården ------------------- //
+#om{
+  color: $dark_grey;
+  h2{
+    margin: 0;
+    padding: 2rem 0 0 0;
+  }
+  p{
+    width: 650px;
+    max-width: 90%;
+    margin: 0;
+    line-height: 1.5rem;
+    padding: 1rem 0 2rem 0;
+  }
+}
+
+// ------------------- Dyrene ------------------- //
+#dyrene{
+  background: #95cbf5;
+  color: $dark_grey;
+  float:right;
+  h2{
+    margin: 0;
+    padding: 2rem 0 0 0;
+  }
+  p{
+    width: 650px;
+    max-width: 90%;
+    line-height: 1.5rem;
+    padding: 1rem 0 2rem 0;
+  }
+}
+
+// ------------------- Footer ------------------- //

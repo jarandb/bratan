@@ -10,132 +10,68 @@
     <link href='https://fonts.googleapis.com/css?family=Lobster+Two|Arimo:400,700' rel='stylesheet' type='text/css'>
     <!-- Important Owl stylesheet -->
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-
     <!-- Default Theme -->
     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-
-    <!--  jQuery 1.7+  -->
-    <script src="jquery-1.9.1.min.js"></script>
-
-    <!-- Include js plugin -->
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
     <script src="assets/owl-carousel/owl.carousel.js"></script>
   </head>
   <body>
+
+
+    	  <div class="wrapper clearfix">
+    	    <header>
+            <div class="logo_wrapper clearfix">
+              <img src="img/logo.png" alt="tre hvete" title="Logoen til bråtan gård">
+    	        <p id="logo"><span>BRÅTAN</span>GÅRD</p>
+            </div>
+            <nav>
+              <a href="#banner">Hjem</a>
+              <a href="#om">Om Gården</a>
+              <a href="#dyrene">Dyrene på gården</a>
+            </nav>
+    	    </header>
+        </div>
+
+
+        <section id="banner"
+        <div class="wrapper">
+        <div class="content">
+          <h1 class="title">Velkommen til gården</h1>
+        </div>
+      </div>
+    </section>
+
     <div class="wrapper">
-    	<header>
-    		<div class="header-container">
-    			<div class="header-container-logo">
-  	  			<img src="img/logo.png"/>
-    			</div>
-    			<nav>
-    				<ul>
-    					<li>
-    					<a href="#home">Hjem</a>
-    					</li>
-    					<li>
-    					<a href="#om">Om gården</a>
-    					</li>
-    					<li>
-    					<a href="#bilder">Bilder av gården</a>
-    					</li>
-    					<li>
-    					<a href="#dyrene">Dyrene på gården</a>
-    					</li>
-    				</ul>
-    			</nav>
-    		</div>
-    	</header>
-    	<main>
-    		<section class="main-container-1" id="home">
-    			<a href="#om">
-    				<h1>Velkommen til Gården</h1>
-    			</a>
-    		</section>
+      <section id="om">
+        <h2> Om gården</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div id="owl-gard" class="owl-carousel owl-theme">
+          <div class="item"><img src="img/hatter.jpg" alt=""></div>
+          <div class="item"><img src="img/slette.jpg" alt=""></div>
+          <div class="item"><img src="img/smia.jpg" alt=""></div>
+          <div class="item"><img src="img/stabbur.jpg" alt=""></div>
+        </div>
+      </section>
+    </div>
 
-    		<section class="main-container-2" id="om">
-  	  		<h2>
-  	  			Om gården
-  	  		</h2>
-  	  		<div class="container-text">
-  		  		<p>
-  		  		</p>
 
-  		  	</div>
-    		</section>
-
-    		<section class="main-container-3" id="bilder">
-    			<img src="img/P1010736.JPG">
-    			<img src="img/P1010746.JPG">
-    			<img src="img/P1010938.JPG">
-    			<img src="img/P1010943.JPG">
-    		</section>
-
-    		<section class="main-container-2" id="omDyrene">
-    			<h2>Dyrene på gården </h2>
-  		  		<div class="container-text">
-  		  		<p>
-
-  		  		</p>
-  		  	</div>
-    		</section>
-
-    		<section class="main-container-3" id="dyrene">
-    			<img src="img/P1010888.JPG">
-    			<img src="img/P1010888.JPG">
-    			<img src="img/P1010888.JPG">
-    			<img src="img/P1010888.JPG">
-    		</section>
-
-    		<section class="main-container-2" id="merOmDyrene">
-  		  		<div class="container-text">
-  		  		<p>
-  		  		</p>
-  		  	</div>
-    		</section>
-    	</main>
-    	<footer>
-    		<div class="footer-container">
-  	  		<address>
-  	  			<h3> Kontakt</h3>
-  	  			<ul>
-  					<li>
-  						<a href="mailto:someone@example.com">someone@example.com</a>
-  					</li>
-  					<li>
-  						+47 123 45 678
-  					</li>
-  					<li>
-  						addresse
-  					</li>
-  				</ul>
-  	  		</address>
-  	  		<div class="footer-container-2" id="meny">
-  	  			<h3> Meny</h3>
-  	  			<ul>
-  					<li>
-  						<a href="#home">Hjem</a>
-  					</li>
-  					<li>
-  						<a href="#om">Om gården</a>
-  					</li>
-  					<li>
-  						<a href="#bilder">Bilder av gården</a>
-  					</li>
-  					<li>
-  						<a href="#dyrene">Dyrene på gården</a>
-  					</li>
-  				</ul>
-  	  		</div>
-  	  	</div>
-  	  	<div class="footer-container-extra">
-  	  	<p>
-  	  		Bråtan gård
-  	  	</p>
-  	  	<p>
-  	  		Laget av Jarand Bjerkhaug
-  	  	</p>
-  	  	</div>
-    	</footer>
+    <div class="wrapper">
+      <section id="dyrene">
+        <h2> Dyrene på gården</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div id="owl-dyr" class="owl-carousel">
+          <img src="../img/kylling.jpg" alt="En husvegg med hatter på">
+        </div>
+      </section>
     </div>
   </body>
 </html>
