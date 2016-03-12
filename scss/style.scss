@@ -47,7 +47,6 @@
   header{
     padding: 1rem 0 0 0;
     height: auto;
-  }
   .logo_wrapper{
     float: left;
     display: inline-block;
@@ -83,6 +82,7 @@
       }
     }
   }
+}
 
 // ------------------- Banner ------------------- //
   #banner{
@@ -98,6 +98,8 @@
       .title{
         font-family: "lobster two", cursive;
         font-size: 5rem;
+        color: #B9C8EA;
+        text-shadow: 0 10px 22px #333;
       }
     }
   }
@@ -137,27 +139,52 @@
 
 // ------------------- Footer ------------------- //
 footer{
-  background: $light_grey;
-  h3{
+  .footer-left{
+    float: left;
+    h3{
     margin: 0;
-  }
-  address{
-    padding: 2rem 0 0 0;
-    width:40%;
-    p{
-      margin: 0;
+    padding: 1rem 0;
+    color: $light_grey;
+    }
+    address{
+      color: $light_grey;
+      p{
+        margin: 0;
+        margin: 0 0 .65rem 0;
+      }
+      a{
+        color: inherit;
+        margin: 0 0 .65rem 0;
+      }
     }
   }
+
   .footer-right{
-    float: right;
-    clear: none;
+    float:right;
     h3{
       margin: 0;
+      padding: 1rem 0;
+      color: $light_grey;
     }
     .footer-menu{
       a{
+        margin: 0 0 .65rem 0;
         display:block;
-        width:40%;
+        text-decoration: none;
+        color: $light_grey;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #banner{
+    background-image:none;
+    height: auto;
+    .content{
+      .title{
+        font-size: 5rem;
+
       }
     }
   }

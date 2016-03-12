@@ -30,32 +30,30 @@ body {
 header {
   padding: 1rem 0 0 0;
   height: auto; }
-
-.logo_wrapper {
-  float: left;
-  display: inline-block;
-  padding-bottom: 2rem; }
-  .logo_wrapper img {
-    float: left; }
-  .logo_wrapper #logo {
+  header .logo_wrapper {
     float: left;
-    color: #3f4453;
-    font-size: 1.35rem;
-    margin: 2rem 0 0 0;
-    font-weight: 400; }
-    .logo_wrapper #logo span {
-      font-weight: 700; }
-
-nav {
-  float: right;
-  margin-top: 2rem; }
-  nav a {
-    color: #3f4453;
-    font-weight: 400;
-    text-decoration: none;
-    margin-left: 2rem; }
-    nav a:active {
-      font-weight: 700; }
+    display: inline-block;
+    padding-bottom: 2rem; }
+    header .logo_wrapper img {
+      float: left; }
+    header .logo_wrapper #logo {
+      float: left;
+      color: #3f4453;
+      font-size: 1.35rem;
+      margin: 2rem 0 0 0;
+      font-weight: 400; }
+      header .logo_wrapper #logo span {
+        font-weight: 700; }
+  header nav {
+    float: right;
+    margin-top: 2rem; }
+    header nav a {
+      color: #3f4453;
+      font-weight: 400;
+      text-decoration: none;
+      margin-left: 2rem; }
+      header nav a:active {
+        font-weight: 700; }
 
 #banner {
   background-image: url(../img/banner_background.jpg);
@@ -68,7 +66,9 @@ nav {
   justify-content: center; }
   #banner .content .title {
     font-family: "lobster two", cursive;
-    font-size: 5rem; }
+    font-size: 5rem;
+    color: #B9C8EA;
+    text-shadow: 0 10px 22px #333; }
 
 #om {
   color: #3e3f44; }
@@ -95,20 +95,35 @@ nav {
     line-height: 1.5rem;
     padding: 1rem 0 2rem 0; }
 
-footer {
-  background: #3f4453; }
-  footer h3 {
-    margin: 0; }
-  footer address {
-    padding: 2rem 0 0 0;
-    width: 40%; }
-    footer address p {
-      margin: 0; }
-  footer .footer-right {
-    float: right;
-    clear: none; }
-    footer .footer-right h3 {
-      margin: 0; }
-    footer .footer-right .footer-menu a {
-      display: block;
-      width: 40%; }
+footer .footer-left {
+  float: left; }
+  footer .footer-left h3 {
+    margin: 0;
+    padding: 1rem 0;
+    color: #3f4453; }
+  footer .footer-left address {
+    color: #3f4453; }
+    footer .footer-left address p {
+      margin: 0;
+      margin: 0 0 .65rem 0; }
+    footer .footer-left address a {
+      color: inherit;
+      margin: 0 0 .65rem 0; }
+footer .footer-right {
+  float: right; }
+  footer .footer-right h3 {
+    margin: 0;
+    padding: 1rem 0;
+    color: #3f4453; }
+  footer .footer-right .footer-menu a {
+    margin: 0 0 .65rem 0;
+    display: block;
+    text-decoration: none;
+    color: #3f4453; }
+
+@media screen and (max-width: 768px) {
+  #banner {
+    background-image: none;
+    height: auto; }
+    #banner .content .title {
+      font-size: 5rem; } }
