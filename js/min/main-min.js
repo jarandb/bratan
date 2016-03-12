@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#owl-gard").owlCarousel({navigation:!0,slideSpeed:300,paginationSpeed:400,singleItem:!0})});
+$(document).ready(function(){$("#owl-gard").owlCarousel({navigation:!0,slideSpeed:300,paginationSpeed:400,singleItem:!0}),$("#owl-dyr").owlCarousel({navigation:!0,slideSpeed:300,paginationSpeed:400,singleItem:!0})});
